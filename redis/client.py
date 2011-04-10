@@ -121,6 +121,9 @@ class Redis(threading.local):
 
     Connection and Pipeline derive from this, implementing how
     the commands are sent and received to the Redis server
+
+    Connections are managed through an optionally passed connection pool, so
+    connections with the same parameters will be reused.
     """
     RESPONSE_CALLBACKS = dict_merge(
         string_keys_to_dict(
