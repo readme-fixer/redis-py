@@ -179,7 +179,7 @@ API Reference
 ### llen(self, name)
   Return the length of the list _name_
 
-###lock(self, name, timeout=None, sleep=0.10000000000000001)
+### lock(self, name, timeout=None, sleep=0.10000000000000001)
   Return a new Lock object using key _name_ that mimics
   the behavior of threading.Lock.
   
@@ -418,7 +418,7 @@ API Reference
 
 ### zinter(self, dest, keys, aggregate=None)
 
-###zinterstore(self, dest, keys, aggregate=None)
+### zinterstore(self, dest, keys, aggregate=None)
   Intersect multiple sorted sets specified by _keys_ into
   a new sorted set, _dest_. Scores in the destination will be
   aggregated based on the _aggregate_, or SUM if none is provided.
